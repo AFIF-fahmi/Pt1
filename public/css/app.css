@@ -1,0 +1,170 @@
+body { 
+    background: #f8f7f4; 
+} /* abu-abu muda */
+
+div {
+    border: solid 0px black;
+}
+
+.elegant-accent { 
+    color: #b08d57; 
+} /* emas */
+
+.elegant-bg { 
+    background: #f8f7f4; 
+} /* abu-abu muda */
+
+.elegant-card { 
+    background: #f3ede7; 
+} /* abu-abu ke coklat sangat muda */
+
+.elegant-btn { 
+    background: #b08d57; 
+    color: #fffbe6; 
+} /* emas */
+
+.elegant-btn2 { 
+    background: #b08d57; 
+    color: #fffbe6; 
+}
+
+.elegant-btn2:hover { 
+    background: #816233; 
+    color: #fffbe6; 
+}
+
+.elegant-btn:hover { 
+    background: #a0783c; 
+    color: #fffbe6; 
+} /* emas tua */
+
+.elegant-brown { 
+    background: #b89164; 
+    color: #fffbe6; 
+} /* coklat muda */
+
+.elegant-shadow { 
+    box-shadow: 0 2px 16px 0 rgba(176,141,87,0.08); 
+}
+
+.elegant-border { 
+    border-color: #b08d57 !important; 
+}
+
+.btn-view { 
+    background: rgb(211, 160, 84); 
+    color: #fffbe6; 
+}
+
+.btn-view:hover { 
+    background: rgb(141, 107, 56); 
+    color: #fffbe6; 
+}
+
+.btn-edit { 
+    background: rgb(247, 190, 46); 
+    color: #fffbe6; 
+}
+
+.btn-edit:hover { 
+    background: rgb(177, 157, 33); 
+    color: #fffbe6; 
+}
+
+.btn-delete { 
+    background: rgb(168, 121, 0); 
+    color: #fffbe6; 
+}
+
+.btn-delete:hover { 
+    background: rgb(93, 66, 0); 
+    color: #fffbe6; 
+}
+
+.nav-link {
+    color: #ba9737 !important;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #8a6c1d !important;
+    font-weight: bolder;
+}
+
+/* animasi section */
+.fade-in-anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.pop-text-anim {
+    transition: all 0.3s ease;
+}
+
+.pop-text-anim:hover {
+    font-size: 250%;
+}
+
+/* animation untuk Dashboard Blog */
+.fluid-title {
+    display: inline-block;
+    background: linear-gradient(90deg, #b08d57, rgb(158, 129, 56), #da9b3e, #bea319, #b08d57);
+    background-size: 300% auto;
+    color: rgb(158, 129, 56);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fluidMove 5.5s linear infinite;
+    transition: filter 0.3s, animation-play-state 0.3s;
+}
+
+@keyframes fluidMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.fluid-title:hover {
+    animation-play-state: paused;
+    filter: drop-shadow(0 0 4px #fff9e7) drop-shadow(0 0 8px #ffe95a);
+}
+
+/* Efek hover pop-up untuk card post */
+.card.fade-in-anim {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card.fade-in-anim:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 8px 25px rgba(176, 141, 87, 0.15) !important;
+}
+
+/* Pastikan animasi fadeInUp selesai sebelum hover bisa bekerja */
+.card.fade-in-anim {
+    animation-fill-mode: forwards;
+}
+
+.vibration-anim:hover {
+    transform: rotateX(10);
+}
+
+/* Animasi getar untuk tombol */
+.elegant-btn:hover, .btn-view:hover, .btn-edit:hover, .btn-delete:hover {
+    animation: vibrate 0.25s linear;
+}
+
+@keyframes vibrate {
+    0%   { transform: translateX(0)    rotate(0deg); }
+    20%  { transform: translateX(-1px) rotate(3deg); }
+    40%  { transform: translateX(1px)  rotate(0deg); }
+    60%  { transform: translateX(-1px) rotate(-3deg);}
+    80%  { transform: translateX(1px)  rotate(0deg); }
+    100% { transform: translateX(0)    rotate(0deg); }
+}
